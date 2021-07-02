@@ -28,17 +28,19 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"> </p>
+      <!-- the currentDay element holds the current day using Moment.js, text added through script -->
+      <p id="currentDay" class="lead"> </p> 
     </header>
 
+    <!-- time block container, holds all the hour blocks of time throught a typical workday, layout of webpage styled using Bootstrap -->
     <div class="container time-block">
       <div class="row 9AM">
         <div class="col-1 hour ">
           9AM
         </div>
         <textarea class="col-10" id="9AM" ></textarea>
-        <div class="col-1 saveBtn" >
-          <button id='9AMSubmit'>Save</button>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -47,8 +49,8 @@
           10AM
         </div>
         <textarea class="col-10" id="10AM" ></textarea>
-        <div class="col-1 saveBtn" id='10AMSubmit'>
-          <button id='10AMSubmit'>Save</button>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -57,8 +59,8 @@
           11AM
         </div>
         <textarea class="col-10" id="11AM" ></textarea>
-        <div class="col-1 saveBtn" >
-          <button id='11AMSubmit'>Save</button>
+        <div class="col-1 saveBtn">
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -68,7 +70,7 @@
         </div>
         <textarea class="col-10" id="12PM" ></textarea>
         <div class="col-1 saveBtn" >
-          <button id='12PMSubmit'>Save</button>
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -78,7 +80,7 @@
         </div>
         <textarea class="col-10" id="1PM" ></textarea>
         <div class="col-1 saveBtn 1" >
-          <button id='1PMSubmit'>Save</button>
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -88,7 +90,7 @@
         </div>
         <textarea class="col-10" id="2PM" ></textarea>
         <div class="col-1 saveBtn" >
-          <button id='2PMSubmit'>Save</button>
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -98,7 +100,7 @@
         </div>
         <textarea class="col-10" id="3PM" ></textarea>
         <div class="col-1 saveBtn">
-          <button id='3PMSubmit'>Save</button>
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -108,7 +110,7 @@
         </div>
         <textarea class="col-10" id="4PM" ></textarea>
         <div class="col-1 saveBtn" >
-          <button id='4PMSubmit'>Save</button>
+          <i class="fas fa-save"></i>
         </div>
       </div>
 
@@ -118,7 +120,7 @@
         </div>
         <textarea class="col-10" id="5PM" ></textarea>
         <div class="col-1 saveBtn" >
-          <button id='5PMSubmit'>Save</button>
+          <i class="fas fa-save"></i>
         </div>
       </div>
       
@@ -127,7 +129,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="Assets/script.js"></script>
+    <script src="./Assets/script.js"></script>
 
   </body>
 </html>
