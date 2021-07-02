@@ -20,7 +20,6 @@ var currentDayHours = ['#9AM', '#10AM', '#11AM', '#12PM', '#1PM', '#2PM', '#3PM'
 for (var i = 0; i < workDayHours.length; i++){
     var timeNow = moment(); //crates a new moment
     var timeThen = moment(workDayHours[i],'h a'); //creates a moment using the time obtained from the workDayHours element
-
     var timeDiff = timeNow.diff(timeThen, 'hour'); //calculates the time difference in hours between current time and time given by array in hours
 
 // block below is used to assign different formatting depending on time of day.
