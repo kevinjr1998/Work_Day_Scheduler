@@ -19,15 +19,15 @@ var currentDayHours = ['#9AM', '#10AM', '#11AM', '#12PM', '#1PM', '#2PM', '#3PM'
 //for loop loops through all timeboxes/times
 for (var i = 0; i < workDayHours.length; i++){
     var timeNow = moment(); //crates a new moment
+    var startOfTimeNow = timeNow.startOf('hour'); //rounds moment to start of hour
     var timeThen = moment(workDayHours[i],'h a'); //creates a moment using the time obtained from the workDayHours element
-    var timeDiff = timeNow.diff(timeThen, 'hour'); //calculates the time difference in hours between current time and time given by array in hours
-
+    var timeDiff = startOfTimeNow.diff(timeThen, 'hour'); //calculates the time difference in hours between current time and time given by array in hours
 // block below is used to assign different formatting depending on time of day.
     if(timeDiff > 0){
         $(currentDayHours[i]).addClass('past');
     } else if(timeDiff < 0){
         $(currentDayHours[i]).addClass('future');
-    } else if(timeDiff == 0 ){
+    } else if(timeDiff == 0){
         $(currentDayHours[i]).addClass('present');
     }
 }
