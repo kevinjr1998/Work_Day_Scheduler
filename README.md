@@ -7,6 +7,7 @@ This task involved using 3rd Party APIs to add styling to the webpage and also t
 ## Screenshot
 
 ![Screenshot](./assets/Day_Planner_Screenshot.png)
+![gif](./Assets/Images/Work_Day_Scheduler.gif)
 
 ## Link to Deployed Webpage
 
