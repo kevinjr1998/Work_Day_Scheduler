@@ -12,3 +12,11 @@ This task involved using 3rd Party APIs to add styling to the webpage and also t
 ## Link to Deployed Webpage
 
 [Link](https://kevinjr1998.github.io/Work_Day_Scheduler/)
+
+## License 
+
+MIT
+
+## Contact info 
+
+kevinryner@yahoo.co.uk
